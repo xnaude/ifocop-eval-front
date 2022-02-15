@@ -1,0 +1,11 @@
+/* Style sur commun a toutes les pages */
+
+:root {
+    font-size: 62.5%;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    font-size: 1.6rem;
+    min-height: 80vh;
+}
