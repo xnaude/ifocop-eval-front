@@ -80,7 +80,7 @@
         background-image: url("../images/chambre4.jpg");
         background-position: center;
         background-size: cover;
-        filter : brightness(20%);
+        filter: brightness(20%);
     }
 
     #section-chambre article:hover h3 {
@@ -104,6 +104,24 @@
 #section-chambre article h3 {
     text-decoration: none;
     color: white;
+}
+
+
+.map-reponsive {
+    width : 100%;
+    height: 300px;
+}
+
+@media only screen and (min-width:768px) {
+    .map-reponsive {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width:992) {
+    .map-reponsive {
+        height: 600px;
+    }
 }
 
 @keyframes upFontSize {
