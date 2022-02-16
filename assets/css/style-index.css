@@ -1,0 +1,119 @@
+#section-chambre article {
+    height: 25rem;
+    margin: 1rem 0;
+    position: relative;
+}
+
+#room-classique {
+    background-image: url("../images/chambre1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#room-confort {
+    background-image: url("../images/chambre2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#room-deluxe {
+    background-image: url("../images/chambre3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#room-suite {
+    background-image: url("../images/chambre4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+
+    #room-classique:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/chambre1.jpg");
+        background-position: center;
+        background-size: cover;
+        filter: brightness(20%);
+    }
+
+
+    #room-confort:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/chambre2.jpg");
+        background-position: center;
+        background-size: cover;
+        filter: brightness(20%);
+    }
+
+    #room-deluxe:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/chambre3.jpg");
+        background-position: center;
+        background-size: cover;
+        filter: brightness(20%);
+    }
+
+    #room-suite:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/chambre4.jpg");
+        background-position: center;
+        background-size: cover;
+        filter : brightness(20%);
+    }
+
+    #section-chambre article:hover h3 {
+        top: 20%;
+        font-size: 3rem;
+        animation: upFontSize 1s;
+    }
+
+    #section-chambre h3 {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+#section-chambre article a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#section-chambre article h3 {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes upFontSize {
+    0% {
+        top: 0;
+        font-size: 1.75rem;
+    }
+
+    100% {
+        top: 20%;
+        font-size: 3rem;
+    }
+}

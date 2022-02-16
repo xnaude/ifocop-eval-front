@@ -27,7 +27,12 @@ h3,
 h4,
 h5,
 h6 {
+    margin: 1rem 0;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #651432;
 }
 
 ul {
@@ -40,23 +45,24 @@ li {
 
 a {
     color: #333;
+    text-decoration: none;
 }
 
 footer a {
     color: white;
 }
 
-.btn-myPrimary{
+.btn-myPrimary {
     background-color: #651432;
     color: white;
 }
 
-.mybtn{
+.mybtn {
     margin-top: 2rem;
     font-size: 2rem;
 }
 
-.mybtn:hover{
+.mybtn:hover {
     background-color: white;
     color: #651432;
 
