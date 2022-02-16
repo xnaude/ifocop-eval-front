@@ -8,10 +8,16 @@
 
 .overlay {
     padding: 2rem 2.5rem;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 70%;
 }
 
 .nav-list li {
@@ -20,11 +26,28 @@
 }
 
 .nav-list li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+    color: #651432;
+}
+
+.nav-item-1 {
+    width: 50%;
+    text-align: center;
+}
+
+.nav-item-2 {
+    text-align: end;
+}
+
+.nav-item-2 li a {
     font-size: 1.2rem;
-    color: #fff;
 }
 
 .burger .bar {
@@ -105,10 +128,8 @@
         transition: all .3s;
     }
 
-    .nav-lisr li a:hover {
-        background-color: #fff;
-        color: rgba(255, 255, 255);
-        transform: translateY(-1rem);
+    .nav-list li input {
+        border: 1px solid;
     }
 
     .burger {
@@ -117,7 +138,7 @@
     }
 
     .div-logo {
-        max-height: 10vh;
+        width: 25%;
         z-index: 99;
     }
 
