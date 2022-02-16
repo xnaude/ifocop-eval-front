@@ -1,3 +1,21 @@
-.max-height-50 {
-    max-height: 50vh;
+#carouselExampleIndicators {
+    height: 50vh;
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    top: 1rem
+}
+
+@media only screen and (min-width: 992px){
+    .carousel-caption {
+        width: 25%;
+        text-align: left;
+    }
 }

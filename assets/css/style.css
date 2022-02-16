@@ -45,3 +45,20 @@ a {
 footer a {
     color: white;
 }
+
+.btn-myPrimary{
+    background-color: #651432;
+    color: white;
+}
+
+.mybtn{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.mybtn:hover{
+    background-color: white;
+    color: #651432;
+
+    transition: 1s;
+}
