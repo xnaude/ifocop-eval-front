@@ -47,7 +47,7 @@
                     <li><a href="">FR|EN</a></li>
                     <li><a href="">Avis</a></li>
                     <li>
-                        <form action="">
+                        <form action="/">
                             <input type="text">
                             <button>
                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -61,7 +61,7 @@
 
     <main>
 
-        <section id="carouselHome" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselHome" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -69,7 +69,7 @@
                 <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <article class="carousel-item active">
+                <div class="carousel-item active">
                     <div class="carousel-caption">
                         <h2 class="text-white">LES CHAMBRES</h2>
                         <p class="h3 fw-bold">
@@ -81,8 +81,8 @@
                         </p>
                     </div>
                     <img src="./assets/images/chambre4.jpg" class="d-block w-100" alt="image chambre">
-                </article>
-                <article class="carousel-item">
+                </div>
+                <div class="carousel-item">
                     <div class="carousel-caption">
                         <h2 class="text-dark">LE RESTAURANT</h2>
                         <p class="h3 fw-bold text-dark">
@@ -94,8 +94,8 @@
                         </p>
                     </div>
                     <img src="./assets/images/restaurant.jpg" class="d-block w-100" alt="image restaurant">
-                </article>
-                <article class="carousel-item">
+                </div>
+                <div class="carousel-item">
                     <div class="carousel-caption">
                         <h2 class="text-white">LE SPA</h2>
                         <p class="h3 fw-bold">
@@ -107,7 +107,7 @@
                         </p>
                     </div>
                     <img src="./assets/images/spa.jpg" class="d-block w-100" alt="image spa">
-                </article>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -117,7 +117,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </section>
+        </div>
 
         <section id="section-chambre" class="container mt-3">
             <h2>Les chambres</h2>
@@ -148,7 +148,6 @@
             </div>
         </section>
 
-        
 
     </main>
 
@@ -207,8 +206,8 @@
                 </ul>
             </div>
             <div class="col-md-6 col-lg-4">
+                <p>INFORMATIONS</p>
                 <ul>
-                    <p>INFORMATIONS</p>
                     <li class="social-networks pt-2">
                         <a href="">
                             <i class="fa fa-facebook-square fs-1" aria-hidden="true"></i>
