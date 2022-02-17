@@ -13,6 +13,16 @@ body {
     color: #333;
 }
 
+@media screen and (min-width: 992px) {
+    header {
+        box-shadow: 10px 1px 10px #651432;
+    }
+}
+
+main {
+    margin-top: 2rem;
+}
+
 @media only screen and (min-width: 1900px) {
 
     body {
@@ -71,7 +81,7 @@ footer a {
 }
 
 .my-secondary-color {
-    color: #333 ;
+    color: #333;
 }
 
 .btn-outline-secondary {
