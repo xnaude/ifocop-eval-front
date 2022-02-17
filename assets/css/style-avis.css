@@ -1,0 +1,15 @@
+#list_avis {
+    flex-direction: column;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    #list_avis {
+        flex-direction: inherit;
+    }
+}
+
+#list_avis a {
+    border: none;
+    color: #333;
+}
