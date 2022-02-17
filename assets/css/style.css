@@ -88,3 +88,8 @@ footer a {
     color: #333;
     border-color: #333;
 }
+
+.m-h-50 {
+    margin: auto;
+    max-height: 50vh;
+}
