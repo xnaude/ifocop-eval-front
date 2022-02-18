@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 #carouselExampleIndicators {
     height: 50vh;
     width: 100%;
@@ -5,7 +12,9 @@
 
 .carousel-item img {
     height: 50vh;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
@@ -13,7 +22,7 @@
     top: 1rem
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
     .carousel-caption {
         width: 25%;
         text-align: left;

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 #section-chambre article {
     height: 25rem;
     margin: 1rem 0;
@@ -40,6 +47,7 @@
         background-image: url("../images/chambre1-s.jpg");
         background-position: center;
         background-size: cover;
+        -webkit-filter: brightness(20%);
         filter: brightness(20%);
     }
 
@@ -54,6 +62,7 @@
         background-image: url("../images/chambre2-s.jpg");
         background-position: center;
         background-size: cover;
+        -webkit-filter: brightness(20%);
         filter: brightness(20%);
     }
 
@@ -67,6 +76,7 @@
         background-image: url("../images/chambre3-s.jpg");
         background-position: center;
         background-size: cover;
+        -webkit-filter: brightness(20%);
         filter: brightness(20%);
     }
 
@@ -80,12 +90,14 @@
         background-image: url("../images/chambre4-s.jpg");
         background-position: center;
         background-size: cover;
+        -webkit-filter: brightness(20%);
         filter: brightness(20%);
     }
 
     #section-chambre article:hover h3 {
         top: 20%;
         font-size: 3rem;
+        -webkit-animation: upFontSize 1s;
         animation: upFontSize 1s;
     }
 
@@ -105,6 +117,18 @@
 #section-chambre article h3 {
     text-decoration: none;
     color: white;
+}
+
+@-webkit-keyframes upFontSize {
+    0% {
+        top: 0;
+        font-size: 1.75rem;
+    }
+
+    100% {
+        top: 20%;
+        font-size: 3rem;
+    }
 }
 
 @keyframes upFontSize {

@@ -1,13 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 main {
     min-height: 50vh;
 }
 
 .container article:hover a {
     background-color: #651432;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
 .container article:hover a h2 {
     color: white;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }

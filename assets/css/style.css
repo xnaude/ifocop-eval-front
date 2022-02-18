@@ -1,9 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Style sur commun a toutes les pages */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
     font-size: 62.5%;
-    background-color: rgba(255, 255, 255, 0.95);
 }
 
 body {
@@ -15,6 +21,7 @@ body {
 
 @media screen and (min-width: 992px) {
     header {
+        -webkit-box-shadow: 10px 1px 10px #651432;
         box-shadow: 10px 1px 10px #651432;
     }
 }
@@ -29,7 +36,6 @@ main {
         max-width: 1900px;
         margin: auto;
     }
-
 }
 
 h1,
@@ -77,6 +83,10 @@ footer a {
     background-color: white;
     color: #651432;
     border: 1px solid #651432;
+
+    -webkit-transition: 1s;
+
+    -o-transition: 1s;
 
     transition: 1s;
 }

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .header {
     background-color: #fff;
     position: sticky;
@@ -8,15 +15,28 @@
 
 .overlay {
     padding: 2rem 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 70%;
 }
 
@@ -38,6 +58,8 @@
 }
 
 .nav-item-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
 }
@@ -56,6 +78,8 @@
     height: .2rem;
     background-color: black;
     position: relative;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
@@ -66,15 +90,21 @@
     height: 100%;
     background-color: black;
     position: absolute;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
 .burger .bar::before {
-    transform: translateY(-1rem)
+    -webkit-transform: translateY(-1rem);
+        -ms-transform: translateY(-1rem);
+            transform: translateY(-1rem)
 }
 
 .burger .bar::after {
-    transform: translateY(1rem)
+    -webkit-transform: translateY(1rem);
+        -ms-transform: translateY(1rem);
+            transform: translateY(1rem)
 }
 
 #burger-toggle {
@@ -84,8 +114,12 @@
 .burger {
     width: 3rem;
     height: 3rem;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     position: absolute;
     right: 2.5rem;
@@ -101,19 +135,43 @@
         width: 100%;
         height: 100%;
         background-color: rgba(255, 255, 255);
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+                transform: translateX(-100%);
+        -webkit-transition: -webkit-transform .3s;
+        transition: -webkit-transform .3s;
+        -o-transition: transform .3s;
         transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .nav-list ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .nav-list li {
@@ -125,6 +183,8 @@
         font-size: 2rem;
         padding: 1rem 2rem;
         display: inline-block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
     }
 
@@ -133,25 +193,32 @@
     }
 
     .burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         z-index: 99;
     }
 
     .div-logo {
         width: 25%;
-        z-index: 99;
     }
 
     #burger-toggle:checked~.nav-list {
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
     }
 
     #burger-toggle:checked~.burger .bar::before {
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
 
     #burger-toggle:checked~.burger .bar::after {
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
     }
 
     #burger-toggle:checked~.burger .bar {
