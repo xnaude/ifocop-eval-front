@@ -44,11 +44,11 @@
                     <li><a href="./rooms.html">Les Chambres</a></li>
                     <li><a href="./restaurant.html">Le Restaurant</a></li>
                     <li><a href="./spa.html">Le SPA</a></li>
-                    <li><a href="./hotel.html">L'Hotel</a></li>
+                    <li><a href="./actualite.html">Actualités</a></li>
                 </ul>
                 <ul class="nav-item-2">
                     <li><a href="./panier.html">Panier</a></li>
-                    <li><a href="">FR|EN</a></li>
+                    <li><a href="">FR | EN</a></li>
                     <li><a href="./avis.html">Avis</a></li>
                     <li>
                         <form action="./search" method="POST">
@@ -83,7 +83,11 @@
                             <a href="./rooms.html" class="btn btn-myPrimary mybtn">Voir le détail des chambres</a>
                         </p>
                     </div>
-                    <img src="./assets/images/chambre4.jpg" class="d-block w-100" alt="image chambre">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/images/chambre4-s.jpg">
+                        <source media="(max-width: 991px)" srcset="./assets/images/chambre4-m.jpg">
+                        <img src="./assets/images/chambre4-l.jpg" class="d-block w-100" alt="image chambre">
+                    </picture>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption">
@@ -97,7 +101,11 @@
                                 restaurant</a>
                         </p>
                     </div>
-                    <img src="./assets/images/restaurant.jpg" class="d-block w-100" alt="image restaurant">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/images/restaurant-s.jpg">
+                        <source media="(max-width: 991px)" srcset="./assets/images/restaurant-m.jpg">
+                        <img src="./assets/images/restaurant-l.jpg" class="d-block w-100" alt="image restaurant">
+                    </picture>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-caption">
@@ -110,7 +118,11 @@
                             <a href="./spa.html" class="btn btn-myPrimary mybtn">Voir le détail des soins</a>
                         </p>
                     </div>
-                    <img src="./assets/images/spa.jpg" class="d-block w-100" alt="image spa">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/images/spa-s.jpg">
+                        <source media="(max-width: 991px)" srcset="./assets/images/spa-m.jpg">
+                        <img src="./assets/images/spa-l.jpg" class="d-block w-100" alt="image spa">
+                    </picture>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
@@ -296,7 +308,7 @@
                     <li><a href="./recrutement.html" class="fs-5">Recrutement</a></li>
                     <li><a href="./event.html" class="fs-5">Evénements</a></li>
                     <li><a href="./presse" class="fs-5">Presse</a></li>
-                    <li><a href="./avis.html"></a></li>
+                    <li><a href="./avis.html" class="fs-5">Avis</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-4">
