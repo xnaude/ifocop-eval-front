@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Retrouvez les informations de l'Hotel Paramis" />
-    <title>L'Hotel PARAMIS</title>
+    <meta name="description" content="Retrouvez les cartes du Restaurant de l'Hotel Paramis" />
+    <title>Restaurant | Hotel PARAMIS</title>
     <!-- Link boostrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-header.css">
     <link rel="stylesheet" href="assets/css/style-footer.css">
-    <link rel="stylesheet" href="assets/css/style-hotel.css">
 </head>
 
 <body>
@@ -63,52 +62,50 @@
 
     <main>
         <section class="container">
-            <h1>L'Hotel</h1>
-            <div class="row justify-content-around">
+            <h1>Recrutement</h1>
+            <form action="./" class="row justify-content-around">
+                <div class="col-md-5 mb-5">
+                    <label for="firstName" class="form-label d-block text-center">Prenom</label>
+                    <input type="text" name="firstName" id="firstName" class="form-control form-control-lg" required>
+                </div>
 
-                <article id="about" class="col-md-4 col-lg-3 my-3">
-                    <div class="card mx-auto">
-                        <a href="hotel-about.html" class="card-body">
-                            <h2>Qui sommes-nous ?</h2>
-                        </a>
-                    </div>
-                </article>
-                <article id="acces" class="col-md-4 col-lg-3 my-3">
-                    <div class="card mx-auto">
-                        <a href="./acces.html" class="card-body">
-                            <h2>Accès</h2>
-                        </a>
-                    </div>
-                </article>
-                <article id="contact" class="col-md-4 col-lg-3 my-3">
-                    <div class="card mx-auto">
-                        <a href="./contact.html" class="card-body">
-                            <h2>Contact</h2>
-                        </a>
-                    </div>
-                </article>
-                <article id="recrutement" class="col-md-4 col-lg-3 my-3">
-                    <div class="card mx-auto">
-                        <a href="./recrutement.html" class="card-body">
-                            <h2>Recrutement</h2>
-                        </a>
-                    </div>
-                </article>
-                <article id="event" class="col-md-4 col-lg-3 my-3">
-                    <div class="card mx-auto">
-                        <a href="./event.html" class="card-body">
-                            <h2>Evénements</h2>
-                        </a>
-                    </div>
-                </article>
-                <article id="presse" class="col-md-4 col-lg-3 my-3">
-                    <div class="card mx-auto">
-                        <a href="./presse.html" class="card-body">
-                            <h2>Presse</h2>
-                        </a>
-                    </div>
-                </article>
-            </div>
+                <div class="col-md-5 mb-5">
+                    <label for="lastName" class="form-label d-block text-center">Nom</label>
+                    <input type="text" name="lastName" id="lastName" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="col-md-5 mb-5">
+                    <label for="business" class="form-label d-block text-center">Entreprise</label>
+                    <input type="text" name="business" id="business" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="col-md-5 mb-5">
+                    <label for="email" class="form-label d-block text-center">Email</label>
+                    <input type="email" name="email" id="email" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="col-md-5 mb-5">
+                    <label for="cv" class="form-label">Votre CV</label>
+                    <input class="form-control form-control-lg" type="file" id="cv" accept=".jpg,.jpeg,.pdf">
+                </div>
+
+                <div class="col-md-5 mb-5">
+                    <label for="lettre_motiv" class="form-label">Votre Lettre de motivation</label>
+                    <input class="form-control form-control-lg" type="file" id="lettre_motiv"
+                        accept=".jpg, .jpeg, .pdf, .txt, .doc, .docx">
+                </div>
+
+                <div class="col-md-8 mb-5">
+                    <label for="message" class="form-label d-block text-center">Votre message</label>
+                    <textarea name="message" id="message" class="form-control fs-2" rows="5" required></textarea>
+                </div>
+
+                <div class="col-6 text-center">
+                    <button class="btn btn-myPrimary mybtn">Envoyer la demande</button>
+                </div>
+
+
+            </form>
         </section>
     </main>
 

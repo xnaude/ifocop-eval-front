@@ -76,6 +76,7 @@ footer a {
 .mybtn:hover {
     background-color: white;
     color: #651432;
+    border: 1px solid #651432;
 
     transition: 1s;
 }

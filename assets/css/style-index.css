@@ -107,24 +107,6 @@
     color: white;
 }
 
-
-.map-reponsive {
-    width : 100%;   
-    height: 300px;
-}
-
-@media only screen and (min-width:768px) {
-    .map-reponsive {
-        height: 450px;
-    }
-}
-
-@media only screen and (min-width:992) {
-    .map-reponsive {
-        height: 600px;
-    }
-}
-
 @keyframes upFontSize {
     0% {
         top: 0;

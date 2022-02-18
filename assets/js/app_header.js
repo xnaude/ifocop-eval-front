@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             document.querySelector('body').style.overflow = '';
         }
-    })
+    });
 
     window.addEventListener('scroll', function () {
 
@@ -23,6 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.nav-item-2').classList.remove('d-none')
             document.querySelector('.div-logo').maxHeight = "10vh";
         }
-    })
+    });
 
 });
