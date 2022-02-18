@@ -1,0 +1,13 @@
+main {
+    min-height: 50vh;
+}
+
+.container article:hover a {
+    background-color: #651432;
+    transition: 1s;
+}
+
+.container article:hover a h2 {
+    color: white;
+    transition: 1s;
+}
