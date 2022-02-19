@@ -1,5 +1,4 @@
 'use strict;'
-
 window.addEventListener('DOMContentLoaded', () => {
     
     let btn_burger = document.querySelector('#burger-toggle');
