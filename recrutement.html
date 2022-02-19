@@ -50,7 +50,7 @@
                     <li>
                         <form action="./search" method="POST">
                             <input type="text">
-                             <button class="btn btn-myPrimary">
+                            <button class="btn btn-myPrimary">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </button>
                         </form>
@@ -108,18 +108,16 @@
             </form>
         </section>
         <!-- Modal Newsletter-->
-        <div class="modal fade " id="modalNewsletter" tabindex="-1" aria-labelledby="modalNewsletterLabel"
-            aria-hidden="true">
+        <div class="modal fade " id="modalNewsletter" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <article class="modal-body">
-                        <h1>newsletter</h1>
+                        <h2>newsletter</h2>
                         <form class="row justify-content-center" action="./newsletter" method="POST">
                             <label for="mail" class="form-label text-center">Entrer votre email pour recevoir la
                                 newsletter</label>
                             <div class="col-md-6 mt-3">
-                                <input type="email" class="form-control" id="emil" name="email"
-                                    aria-describedby="email">
+                                <input type="email" class="form-control" id="mail" name="mail" aria-describedby="mail">
                             </div>
                             <div class="col-md-4 mt-3">
                                 <button class="btn btn-myPrimary">S'abonner</button>
@@ -131,16 +129,17 @@
                     </div>
                 </div>
             </div>
-        <!-- Modal Partage-->
-        <div class="modal fade " id="modalPartage" tabindex="-1" aria-labelledby="modalPartageLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <article class="modal-body">
-                        <h1>Partage</h1>
-                        <p class="text-center">http://evalfront.xavier-naude.fr/</p>
-                    </article>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <!-- Modal Partage-->
+            <div class="modal fade " id="modalPartage" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <article class="modal-body">
+                            <h2>Partage</h2>
+                            <p class="text-center">http://evalfront.xavier-naude.fr/</p>
+                        </article>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,7 +151,7 @@
             <div class="col-md-6 col-lg-4">
                 <p>LES CHAMBRES</p>
                 <ul>
-                   <li><a href="./rooms.html" class="fs-5">Presentation</a></li>
+                    <li><a href="./rooms.html" class="fs-5">Presentation</a></li>
                     <li><a href="./rooms.html#classique_room" class="fs-5">Classique</a></li>
                     <li><a href="./rooms.html#confort_room" class="fs-5">Confort</a></li>
                     <li><a href="./rooms.html#deluxe_room" class="fs-5">Deluxe</a></li>
@@ -162,7 +161,7 @@
             <div class="col-md-6 col-lg-4">
                 <p>LE RESTAURANT</p>
                 <ul>
-                   <li><a href="./restaurant.html" class="fs-5">Presentation</a></li>
+                    <li><a href="./restaurant.html" class="fs-5">Presentation</a></li>
                     <li><a href="./restaurant.html#carte_brasserie" class="fs-5">Carte Brasserie</a></li>
                     <li><a href="./restaurant.html#carte_degustation" class="fs-5">Carte Dégustation</a></li>
                     <li><a href="./restaurant.html#carte_restaurant" class="fs-5">Carte Restaurant</a></li>
@@ -198,7 +197,8 @@
                     <li><a href="./cgv.html" class="fs-5">Conditions Générales de Vente</a></li>
                     <li><a href="./site_map.html" class="fs-5">Plan du site</a></li>
                     <li><a href="" class="fs-5">Imprimer la page</a></li>
-                    <li><a href="" class="fs-5" data-bs-toggle="modal" data-bs-target="#modalNewsletter">S’inscrire à la newsletter</a></li>
+                    <li><a href="" class="fs-5" data-bs-toggle="modal" data-bs-target="#modalNewsletter">S’inscrire à la
+                            newsletter</a></li>
                     <li><a href="" class="fs-5">Partage</a></li>
                 </ul>
             </div>
