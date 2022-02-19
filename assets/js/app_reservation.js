@@ -1,4 +1,6 @@
-"user_strict;"
+"use strict;"
+
+window.addEventListener('DOMContentLoaded', () => {
 
 let input_start_date = document.querySelector('#start_date');
 let input_end_date = document.querySelector('#end_date');
@@ -32,3 +34,4 @@ function calculAndDisplayAmount() {
         }
     }
 }
+});
