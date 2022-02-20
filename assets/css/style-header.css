@@ -179,7 +179,7 @@
 
     .nav-list li {
         margin: 1rem 0;
-        padding-left: 0;
+        padding: 0;
     }
 
     .nav-list li a {
@@ -193,6 +193,16 @@
 
     .nav-list li input {
         border: 1px solid;
+    }
+
+    .nav-item-1,
+    .nav-item-2{
+        width: 100%;
+    }
+
+    .nav-item-1 li a,
+    .nav-item-2 li a {
+        padding: 0;
     }
 
     .burger {
